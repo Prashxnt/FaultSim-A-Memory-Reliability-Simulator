@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------
+FAULTSIM - A Fast, Configurable Memory Resilience Simulator
+(c) 2013-2015 Advanced Micro Devices Inc.
+
+Version History:
+0.1 alpha: 8/23/2015
+--------------------------------------------------------------------------
+
+LICENSE
+
+The license for FAULTSIM can be found in LICENSE.txt.
+
+DEPENDENCIES
+
+FaultSim depends on the Boost library version 1.53.
+
+BUILDING FAULTSIM
+
+Create environment variables to point to the include and library directories of your installed BOOST library
+(typically boost_1_53_0/include) e.g.
+
+export BOOSTINC=/path/../boost_1_53_0/include
+export BOOSTLIB=/path/../boost_1_53_0/lib
+
+Then type;
+
+make
+
+RUNNING FAULTSIM
+
+Type ./faultsim --help for a list of command line parameters.
+
+Basic operation example;
+
+./faultsim --configfile configs/DIMM_none.ini --outfile out.txt
